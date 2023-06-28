@@ -37,8 +37,8 @@ function showList() {
 					$("#chatListContainer").append(`
 							<button type="button" style="width: 100%; height: 60px; margin-bottom: 5px; background-color: black; color: white; border: 0;" class="openChatRoomBtn" id="button0">
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
+									<span>Chat Room with &nbsp;  </span> 
 									<span class="nickNameSpan">${nickNameList[0]}</span>
-									<span>님과의 대화방</span>
 									<span class="ms-auto">${timeList[0]}</span>
 								</div>
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
@@ -55,8 +55,8 @@ function showList() {
 						$(`#button${j}`).before(`
 							<button type="button" style="width: 100%; height: 60px; margin-bottom: 5px; background-color: black; color: white; border: 0;" class="openChatRoomBtn" id="button${i}">
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
+									<span>Chat Room with &nbsp; </span>
 									<span class="nickNameSpan">${nickNameList[i]}</span>
-									<span>님과의 대화방</span>
 									<span class="ms-auto">${timeList[i]}</span>
 								</div>
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
@@ -72,8 +72,8 @@ function showList() {
 						$(`#button${j}`).after(`
 							<button type="button" style="width: 100%; height: 60px; margin-bottom: 5px; background-color: black; color: white; border: 0;" class="openChatRoomBtn" id="button${i}">
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
+									<span>Chat Room with &nbsp; </span>
 									<span class="nickNameSpan">${nickNameList[i]}</span>
-									<span>님과의 대화방</span>
 									<span class="ms-auto">${timeList[i]}</span>
 								</div>
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
@@ -136,7 +136,7 @@ $("#chatList").on("click", ".openChatRoomBtn", function() {
 	$("#dGroupChat").hide();
 	$("#chatMemberListBtn").hide();
 	$(`#returnBtn`).after(`
-		<span style="white-space: nowrap; position: absolute; left: 50%; transform: translateX(-50%);" class="chatNameTag">${nickName}님과의 채팅방</span>
+		<span style="white-space: nowrap; position: absolute; left: 50%; transform: translateX(-50%);" class="chatNameTag">Chat Room with ${nickName}</span>
 	`);
 	var inserted = $(this).find(".inserted").val();
 	$.ajax("/chat/room", {
@@ -432,8 +432,8 @@ $("#chatListSearchBtn").click(function() {
 					$("#chatListContainer").append(`
 							<button type="button" style="width: 100%; height: 60px; margin-bottom: 5px; background-color: black; color: white; border: 0;" class="openChatRoomBtn" id="button0">
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
+									<span>Chat Room with &nbsp; </span>
 									<span class="nickNameSpan">${nickNameList[0]}</span>
-									<span>님과의 대화방</span>
 									<span class="ms-auto">${timeList[0]}</span>
 								</div>
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
@@ -450,8 +450,8 @@ $("#chatListSearchBtn").click(function() {
 						$(`#button${j}`).before(`
 							<button type="button" style="width: 100%; height: 60px; margin-bottom: 5px; background-color: black; color: white; border: 0;" class="openChatRoomBtn" id="button${i}">
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
+									<span>Chat Room with &nbsp; </span>
 									<span class="nickNameSpan">${nickNameList[i]}</span>
-									<span>님과의 대화방</span>
 									<span class="ms-auto">${timeList[i]}</span>
 								</div>
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
@@ -467,8 +467,8 @@ $("#chatListSearchBtn").click(function() {
 						$(`#button${j}`).after(`
 							<button type="button" style="width: 100%; height: 60px; margin-bottom: 5px; background-color: black; color: white; border: 0;" class="openChatRoomBtn" id="button${i}">
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
+									<span>Chat Room with &nbsp; </span>
 									<span class="nickNameSpan">${nickNameList[i]}</span>
-									<span>님과의 대화방</span>
 									<span class="ms-auto">${timeList[i]}</span>
 								</div>
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">

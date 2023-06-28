@@ -98,7 +98,7 @@ $("#chatList").on("click", ".openGroupChatRoomBtn", function() {
 	$("#dGroupChat").show();
 	$("#chatMemberListBtn").show();
 	$(`#returnBtn`).after(`
-		<span style="white-space: nowrap; position: absolute; left: 50%; transform: translateX(-50%);" class="chatNameTag">${title} 채팅방</span>
+		<span style="white-space: nowrap; position: absolute; left: 50%; transform: translateX(-50%);" class="chatNameTag">${title}</span>
 	`);
 	var inserted = $(this).find(".inserted").val();
 	$.ajax("/groupChat/room", {

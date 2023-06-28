@@ -118,16 +118,16 @@ public interface ClimbingMateMapper {
 
 	@Delete("""
 			DELETE FROM ClimbingMateFileName
-			WHERE mateId = #{mateId}
+			WHERE mateId = #{id}
 				AND fileName = #{fileName}
 			""")
 	void deleteFileNameByBoardIdAndFileName(Integer id, String fileName);
 
 	@Insert("""
 			INSERT INTO FileName (mateId, fileName)
-			VALUES (#{mateId}, #{fileName})
+			VALUES (#{id}, #{originalFileName})
 			""")
-	void insertFileName(Integer id, String originalFilename);
+	void insertFileName(Integer id, String originalFileName);
 
 	@Update("""
 			UPDATE ClimbingMate

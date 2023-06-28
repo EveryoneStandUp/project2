@@ -49,7 +49,6 @@ public class ClimbingMateService {
 	}
 
 	public boolean modify(ClimbingMate climbingMate) {
-		System.out.println(1234);
 		return mateMapper.updateBoardById(climbingMate);
 	}
 	

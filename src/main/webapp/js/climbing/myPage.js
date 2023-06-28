@@ -183,7 +183,7 @@ function showList() {
 					<button type="button" style="width: 100%; height: 60px; margin-bottom: 5px;" class="openChatRoomBtn" id="button0">
 						<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
 							<span class="nickNameSpan">${nickNameList[0]}</span>
-							<span>님과의 대화방</span>
+							<span>Chat Room with &nbsp; </span>
 							<span class="ms-auto">${timeList[0]}</span>
 						</div>
 						<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
@@ -201,7 +201,7 @@ function showList() {
 							<button type="button" style="width: 100%; height: 60px; margin-bottom: 5px;" class="openChatRoomBtn" id="button${i}">
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
 									<span class="nickNameSpan">${nickNameList[i]}</span>
-									<span>님과의 대화방</span>
+									<span>Chat Room with &nbsp; </span>
 									<span class="ms-auto">${timeList[i]}</span>
 								</div>
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
@@ -218,7 +218,7 @@ function showList() {
 							<button type="button	" style="width: 100%; height: 60px; margin-bottom: 5px;" class="openChatRoomBtn" id="button${i}">
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">
 									<span class="nickNameSpan">${nickNameList[i]}</span>
-									<span>님과의 대화방</span>
+									<span>Chat Room with &nbsp; </span>
 									<span class="ms-auto">${timeList[i]}</span>
 								</div>
 								<div class="d-flex" style="padding-right: 10px; padding-left: 10px;">

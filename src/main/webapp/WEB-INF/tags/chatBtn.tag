@@ -115,7 +115,7 @@ button.active {
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header" id="chatRoomModalBefore">
-				<h1 class="modal-title fs-5" id="chatRoomModalLabel">대화방 생성</h1>
+				<h1 class="modal-title fs-5" id="chatRoomModalLabel">Chat Room with &nbsp;  생성</h1>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-footer">

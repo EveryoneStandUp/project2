@@ -24,7 +24,7 @@ function handleListUpButtonClick() {
 
 
 			$(".chatRoomModalBody").remove();
-			$("#chatRoomModalBefore").after('<div class="modal-body chatRoomModalBody">' + data.board.writer + '님과의 대화방을 생성하시겠습니까?</div>');
+			$("#chatRoomModalBefore").after('<div class="modal-body chatRoomModalBody">' + data.board.writer + 'Chat Room with &nbsp; 을 생성하시겠습니까?</div>');
 
 			$("#resMate").empty();
 
