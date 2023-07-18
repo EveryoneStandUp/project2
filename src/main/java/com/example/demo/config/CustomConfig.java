@@ -22,13 +22,13 @@ import software.amazon.awssdk.services.s3.S3Client;
 @EnableMethodSecurity
 public class CustomConfig {
 
-	@Value("${aws.accessKeyId}")
+	@Value("AKIAU46WV2QPUWSDBGWL")
 	private String accessKey;
 
-	@Value("${aws.secretAccessKey}")
+	@Value("oDEjvitZtjzTioA2GeHyEUSlhj0uf09h9JjEVIpg")
 	private String secretKey;
 
-	@Value("${aws.s3.bucketUrl}")
+	@Value("https://bucket0503-mason.s3.ap-northeast-2.amazonaws.com/project")
 	private String bucketUrl;
 
 	@Autowired

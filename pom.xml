@@ -16,6 +16,7 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
+		<aws.s3.bucketUrl>https://bucket0503-mason.s3.ap-northeast-2.amazonaws.com/project</aws.s3.bucketUrl>
 	</properties>
 	<dependencies>
 		
